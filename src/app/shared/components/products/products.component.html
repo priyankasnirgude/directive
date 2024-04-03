@@ -1,0 +1,43 @@
+<!-- <div class="form-group">
+    <label for="search">Search Products</label>
+    <input type="text" (keyup)="onProductSearch($event)"class="form-control" id="Search">
+</div>
+
+<div class="form-group">
+    <label for="search">Search Products 2</label>
+    <input type="text" [(ngModel)]="searchProd" class="form-control">
+</div>
+
+<p class="alert alert-success" *ngIf="searchProd.length > 0; else noProdSearch">
+    {{searchProd}}
+</p>
+
+<ng-template #noProdSearch>
+    <p class="alert alert-warning">No Product Search Yet!!!</p>
+</ng-template>
+
+<div class="form-group">
+    <label for="Search">Get Products</label>
+    <input type="text" #getProduct class="form-control">
+</div>
+<button class="btn btn-primary" (click)="onGetProduct(getProduct)">Get Product</button>
+
+<button class="btn btn-primary ml-3" (click)="onGetProduct2()">Get Product2</button>
+
+<hr>
+
+<button 
+[disabled]="isDisabled"
+(click)="getProductStatus()"
+class="btn btn-primary mr-3">Add Product</button>
+<button class="btn btn-primary" [disabled]="productCount === 0" (click)="removeProducts()">Remove Product</button>
+<hr>
+
+<p class="alert alert-info">
+    {{productAddStatus}}
+</p> -->
+
+<app-product></app-product>
+<app-product></app-product>
+
+<hr>

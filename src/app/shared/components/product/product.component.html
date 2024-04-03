@@ -1,0 +1,39 @@
+<!-- <div>
+    {{resp}}
+</div> -->
+
+<!-- <div [innerHTML]="resp">
+
+</div> -->
+
+
+<p [ngStyle]="{
+    backgroundColor : this.isProdAvailable ? 'orange' : '#ccc'
+}"
+
+[ngClass]="{
+    'text-white' : isProdAvailable,
+    'text-danger' : !isProdAvailable,
+    'p-4' : isProdAvailable,
+    'p-3' : !isProdAvailable
+}"
+
+>The Product is {{productName}} 
+    with id {{productId}} and 
+    <strong *ngIf="isProdAvailable; else outOfStock">Product is available</strong>
+    <ng-template #outOfStock>
+        <strong>Product is out of stock</strong>
+    </ng-template>
+</p>
+
+<!-- <input type="text" [value]="userName" class="form-control">
+
+<img [src]="imgUrl" class="img-fluid"> -->
+
+<!-- <strong [innerHTML]="productName">
+
+</strong>
+
+<strong [innerText]="'Iphone'">
+
+</strong> -->
